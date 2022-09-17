@@ -1,23 +1,31 @@
 body {
-	background-color: #707070
+	background-color: #100F0F
 }
 
 
 .navbar ul {
 	list-style-type: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	background-color: #111;
+	border-top: 1px solid #E2DCC8;
+	border-bottom: 1px solid #E2DCC8;
+	z-index: 1;
+	
 }
 
 .navbar li {
 	float: left;
+	margin-left: 3px;
 }
 
 .navbar li a {
 	display: block;
-	color: white;
+	color: #E2DCC8;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -28,21 +36,61 @@ body {
 	background-color: #222;
 }
 
-.inpfield-right {
-	float: right;
+.button {
+	background-color: #E2DCC8;
+	color: #111;
+	width: 100px;
+	border: 3px solid #E2DCC8;
+	text-decoration: none;
 }
 
-.inpfield-left {
-	float: left;
+hr {
+	color: #E2DCC8;
 }
 
-button {
-	background-color: #123;
-}
-
-form {
+.data {
 	text-align: center;
+	color: #E2DCC8;
 	margin: auto;
+	margin-top: 75px;
+	width: 33%;
+	border: 3px solid #E2DCC8;
+}
+
+input {
+	display: block;
+}
+
+.image {
+	margin-left: auto;
+	width: 50%;
+	margin-top: 50px;
+	margin-left: 0px;
+}
+
+.active {
+	background-color: #A5C9CA;
+}
+
+marquee {
+	position: fixed;
+	margin-top: 0px;
+	margin-left: 0px;
+	background-color: #E2DCC8;
+	overflow: hidden;
+}
+
+.thanks {
+	text-align: center;
+	color: #E2DCC8;
+	margin: auto;
+	margin-top: 75px;
 	width: 66%;
-	border: 3px solid #fff
+	border: 3px solid #E2DCC8;
+}
+
+.news {
+	display: block;
+	color: #E2DCC8;
+	font-size: large;
 }
