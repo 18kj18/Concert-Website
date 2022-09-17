@@ -7,13 +7,36 @@
     <body>
 		<div class="navbar">
 			<ul>
-				<li><a href="./concert.html">Home</a></li>
-				<li><a href="./concertdetails.html">Concert Details</a></li>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./ticketp.html" class="active">Purchase Tickets</a></li>
 			</ul>
 		</div>
-		<form action="/" method="get">
+
+		<div class="data">
+
 			<h1>Concert Tickets</h1>
-			<h3>General Information</h3>
+			<hr/>
+
+			<h3>Purchase Information</h3>
+			
+			<label for="band"> Band Name</label>
+			<input id="band" list="bandlist">
+			<datalist id="bandlist">
+				<option value="Lovejoy"></option>
+				<option value="Imagine Dragons"></option>
+				<option value="One Direction"></option>
+				<option value="Seamus Heaney"></option>
+			</datalist>
+			</br>
+
+			<label for="ticketamount"> Number of Tickets </label>
+			<input id="ticketamount" type="number">
+			</br>
+
+			<hr/>
+
+			<h3>Personal Information</h3>
+
 			<label for="name"> Name </label>
 			<input id="name" type="text">
 			</br>
@@ -23,17 +46,14 @@
 			</br>
 				
 			<label for="address"> Address </label>
-			<textarea id="address" rows="1" cols="20"> </textarea>
-			</br>
-
-			<label for="ticketamount"> Number of Tickets </label>
-			<input id="ticketamount" type="number">
+			<input id="address" type="text">
 			</br>
 
 			<label for="email"> Email-Address </label>
 			<input id="email" type="email">
 			</br>
 			<hr/>
+			
 			<h3>Credit Card Information</h3>
 
 			<label for="cardname"> Cardholder Name </label>
@@ -52,8 +72,9 @@
 			<input id="cvcnum" type="number">
 			</br>
 
-			<button type="button">Click Me!</button>
-		</form>
+			<a href="./concertd.html" class="button">Submit</a>
+
+		</div>
 
     </body>
 </html>
